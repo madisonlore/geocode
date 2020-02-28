@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geocode</title>
+    <h1>Question Categories</h1>
+</head>
+
+<body>
+
+<script src="static/js/script.js"></script>
+<select id="ddl" onchange="configureDropDownLists(this,categories,document.getElementById('ddl2'))">
+  {% for cat in categories.keys() %}
+          <option value="{{ cat }}">{{ cat }}</option>
+      {% endfor %}
+</select>
+
+<select id="ddl2">
+</select>
+
+</body>
+</html>
+
+
